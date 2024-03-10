@@ -1,0 +1,462 @@
+/* ----- START WHOLE PAGE ----- */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d3eae2;
+}
+
+/* ----- END WHOLE PAGE ----- */
+
+/* ----- START HEADER ----- */
+
+header {
+    background-color: #1d3a32;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+header img {
+    width: 200px; 
+    height: 200px; 
+    display: block;
+    margin: 0 auto;
+}
+
+/* ----- START NAVIGATION ----- */
+nav {
+    background-color: #006442;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1em;
+    margin: 0 1em;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #004529; 
+}
+
+/* ----- END NAVIGATION ----- */
+
+/* ----- START HOME-SECTION ----- */
+
+section {
+    padding: 2em;
+    text-align: center;
+}
+
+.section-heading {
+    font-size: 50px; 
+}
+
+.justified-text {
+    text-align: justify;
+    font-size: 20px;
+}
+
+/* ----- END HOME-SECTION ----- */
+
+/* ----- START HOME-MENU COVERS ----- */
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.image-item {
+    text-align: center;
+}
+
+.image-item img {
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-item p {
+    margin-top: 10px;
+}
+
+.image-item:hover img {
+    transform: scale(1.1); 
+}
+
+/* ----- END HOME-MENU COVERS ----- */
+
+/* ----- START ABOUT-US AND CONTACT-US BANNER ----- */
+
+#about {
+    overflow: hidden; /* To hide any content that exceeds the specified dimensions */
+}
+
+#about img {
+    width: 100%; /* Make the image fill the container width */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Remove any default spacing below the image */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+
+#contact {
+    overflow: hidden; /* To hide any content that exceeds the specified dimensions */
+}
+
+#contact img {
+    object-fit: cover;
+    width: 100%; /* Make the image fill the container width */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Remove any default spacing below the image */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+/* ----- END ABOUT-US AND CONTACT-US BANNER ----- */
+
+/* ----- START HOME-FLIP CARDS ----- */
+
+.card {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.banner-style {
+    border-radius: 50px;
+    width: 100%; /* Make the image fill the container width */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Remove any default spacing below the image */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-text {
+    padding: 20px;
+}
+
+.card-text h2 {
+    color: #333;
+}
+
+.card-text p {
+    color: #666;
+}
+
+/* ----- END HOME-FLIP CARDS ----- */
+
+/* ----- START ABOUT-US PAGE ----- */
+
+.ABOUTS-justified-text {
+    text-align: justify;
+    text-indent: 50px;
+    font-size: 20px;
+}
+
+.ABOUT-US {
+    font-size: 50px;
+}
+
+/* ----- END ABOUT-US PAGE ----- */
+
+/* ----- START CONTACT-US PAGE ----- */
+section#contact {
+    text-align: center;
+    padding: 40px;
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.contact-image {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.contact-image img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.contact-form {
+    flex: 2;
+    text-align: left;
+}
+
+.contact-form form {
+    display: grid;
+    gap: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #006442;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #099e63; /* Change the background color on hover */
+}
+
+/* ----- END CONTACT-US PAGE ----- */
+
+/* ----- START SHOP INFORMATION ----- */
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.contact-item i {
+    margin-right: 10px;
+}
+
+/* ----- END SHOP INFORMATION ----- */
+
+/* ----- Media query for responsiveness ----- */
+@media only screen and (max-width: 800px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+/* ----- Media query for responsiveness ----- */
+
+/* ----- START MENU 4 FLIP BOX ----- */
+.flip-card-container {
+    display: flex;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    margin: 20px;
+    border-radius: 30px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    border-radius: 30px;
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 30px;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+    border-radius: 30px;
+}
+
+.flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 30px;
+}
+
+.flip-card img {
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+}
+
+/* ----- END MENU 4 FLIP BOX ----- */
+
+/* ----- START HOT-BREW PRODUCT PAGE ----- */
+
+.product-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 300px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+.product-details {
+    padding: 20px;
+}
+
+.product-details h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.product-details p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    text-align: left;
+    text-align: justify;
+}
+
+.product-price {
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.variation-selector {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+label {
+    margin-right: 25px; /* Add spacing between labels and select elements */
+}
+
+select {
+    padding: 5px;
+    font-size: 1em;
+    margin-right: 20px; /* Add spacing between select elements */
+}
+
+button {
+    background-color: #006442;
+    color: #ffffff;
+    padding: 10px 100px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: #099e63; /* Change the background color on hover */
+}
+
+
+/* ----- END HOT-BREW PRODUCT PAGE ----- */
+
+
+/* ----- START MY CART PAGE ----- */
+
+.cart-item {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+.cart-item img {
+    width: 300px;
+    height: 300px;
+    margin-right: 20px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.cart-item-details {
+    flex-grow: 1;
+}
+
+.cart-total {
+    text-align: right;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #006442;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #004529;
+}
+
+/* ----- END MY CART PAGE ----- */
+
+/* ----- START FOOTER AREA ----- */
+
+.footer {
+    background-color: #006442;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+}
+
+/* ----- END FOOTER AREA ----- */
